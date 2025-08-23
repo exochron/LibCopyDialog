@@ -1,0 +1,13 @@
+required-dependencies:
+  - libstub
+
+ignore:
+  - LICENSE
+  - Examples
+
+tools-used:
+  - gallery-generator
+
+license-output: LICENSE
+
+enable-nolib-creation: no

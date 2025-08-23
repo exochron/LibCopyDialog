@@ -1,0 +1,22 @@
+## Interface: 11507,50500,110205
+## Title: LibCopyDialog
+## Notes: Embedded Library to provide a simple Dialog to copy given text
+## Author: eXochron
+## Version: @project-version@
+## X-Curse-Project-ID:
+## X-Wago-ID:
+## Category: Libraries
+## Category-deDE: Bibliotheken
+## Category-esES: Bibliotecas
+## Category-esMX: Bibliotecas
+## Category-frFR: Bibliothèques
+## Category-ptBR: Bibliotecas
+## Category-ruRU: Библиотеки
+## Category-zhCN: 函数库
+## Category-zhTW: 函式庫
+
+LibCopyDialog.lua
+#@do-not-package@
+Examples\Examples.lua
+Examples\Screenshot.lua
+#@end-do-not-package@
