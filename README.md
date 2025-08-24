@@ -1,11 +1,11 @@
 # LibCopyDialog
 
-This is an embedded for WoW addons. It provides a simple dialog to copy given text.
+This is an embedded Library for WoW addons. It provides a simple dialog to copy given text.
 It supports all game flavors.
 
-![Hello World Example](Examples/Example1.jpg "Hello World Example")
+![Hello World Example](https://github.com/exochron/LibCopyDialog/raw/main/Examples/Example1.jpg "Hello World Example")
 
-## Example
+## Usage
 ```LUA
 local copy = LibStub("LibCopyDialog")
 
@@ -23,7 +23,7 @@ print("|Haddon:LibCopyDialog:My custom text to copy|h[Click Me]|h")
 ## Installation
 - Requires [LibStub](https://www.curseforge.com/wow/addons/libstub)
 
-If you are using the BigWigsMods/packager just add your .pkgmeta:
+If you are using the [BigWigsMods/packager](https://github.com/BigWigsMods/packager) just add this to your .pkgmeta:
 ```yaml
 externals:
     Libs/LibStub:
@@ -40,7 +40,7 @@ ignore:
     - 'Libs/LibStub/tests'
 ```
 
-Finally, you need to add both Libs to your toc file:
+Finally, you just need to load both Libraries in your toc file:
 ```
 Libs\LibStub\LibStub.lua
 Libs\LibCopyDialog\LibCopyDialog.lua

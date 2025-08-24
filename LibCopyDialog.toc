@@ -1,6 +1,6 @@
 ## Interface: 11507,50500,110205
 ## Title: LibCopyDialog
-## Notes: Embedded Library to provide a simple Dialog to copy given text
+## Notes: A Library which provides a simple Dialog to copy a given text
 ## Author: eXochron
 ## Version: @project-version@
 ## X-Curse-Project-ID: 1333239
