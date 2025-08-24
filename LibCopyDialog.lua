@@ -12,9 +12,9 @@ local MINOR = @project-version@
 local LCD = LibStub:NewLibrary(LibName, MINOR)
 if not LCD then return end
 
-local initiDialog, defaultLabel
+local initDialog, defaultLabel
 
-function LCD:SetupLocale(locale)
+local function SetupLocale(locale)
     local closeLabel = CLOSE
     defaultLabel = "Press CTRL+C to copy"
 
@@ -45,7 +45,6 @@ function LCD:SetupLocale(locale)
 
     initDialog(closeLabel)
 end
-LCD:SetupLocale(GetLocale())
 
 initDialog = function(closeLabel)
 
@@ -118,9 +117,17 @@ initDialog = function(closeLabel)
     }
 end
 
+SetupLocale(GetLocale())
+
 function LCD:Open(copyText, customLabel)
     StaticPopup_Show("LIB_COPY_DIALOG", customLabel or defaultLabel, nil, copyText)
 end
+
+--@debug@
+function LCD:SetupLocale(locale)
+    SetupLocale(locale)
+end
+--@end-debug@
 
 EventRegistry:RegisterCallback("SetItemRef", function(_, linkData, linkText)
     local _, linkType, copyText = string.split(":", linkData, 3)
