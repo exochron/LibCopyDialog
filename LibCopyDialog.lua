@@ -3,7 +3,12 @@
 assert(LibStub, "LibStub is not installed!")
 
 local LibName = "LibCopyDialog"
-local MINOR = 1
+--@debug@
+local MINOR = 9999999
+--@end-debug@
+--[===[@non-debug@
+local MINOR = @project-version@
+--@end-non-debug@]===]
 local LCD = LibStub:NewLibrary(LibName, MINOR)
 if not LCD then return end
 
