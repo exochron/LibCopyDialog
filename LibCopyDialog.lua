@@ -3,9 +3,9 @@
 assert(LibStub, "LibStub is not installed!")
 
 local LibName = "LibCopyDialog"
---@debug@
+--@do-not-package@
 local MINOR = 9999999
---@end-debug@
+--@end-do-not-package@
 --[===[@non-debug@
 local MINOR = @project-version@
 --@end-non-debug@]===]
@@ -123,11 +123,11 @@ function LCD:Open(copyText, customLabel)
     StaticPopup_Show("LIB_COPY_DIALOG", customLabel or defaultLabel, nil, copyText)
 end
 
---@debug@
+--@do-not-package@
 function LCD:SetupLocale(locale)
     SetupLocale(locale)
 end
---@end-debug@
+--@end-do-not-package@
 
 EventRegistry:RegisterCallback("SetItemRef", function(_, linkData, linkText)
     local _, linkType, copyText = string.split(":", linkData, 3)
