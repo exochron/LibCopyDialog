@@ -1,5 +1,8 @@
 ---@diagnostic disable: undefined-global
 function LCD_Screenshot()
+
+    LibStub("LibCopyDialog"):SetupLocale("enUS")
+
     LibStub("GalleryGenerator"):TakeScreenshots(
         {
             function(api)
