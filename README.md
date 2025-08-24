@@ -31,6 +31,7 @@ externals:
         curse-slug: libstub
     Libs/LibCopyDialog:
         url: https://github.com/exochron/LibCopyDialog
+        tag: latest
         curse-slug: libcopydialog
 
 ignore:
